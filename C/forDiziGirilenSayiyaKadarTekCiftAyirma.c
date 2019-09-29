@@ -10,7 +10,7 @@ void main()
 
     int tekDizi[sayi],ciftDizi[sayi];
 
-    for(int i=0;i<sayi;i++)
+    /*for(int i=0;i<sayi;i++)
     {
         if(i%2==0)
         {
@@ -30,4 +30,28 @@ void main()
     printf("\nCift sayilar;\n");
     for(int i=0;i<sayi/2;i++)
         printf("%d\n",ciftDizi[i]);
+
+    */
+
+    printf("\nCift sayilar;\n");
+    for(int i=0;i<=sayi;i++)
+    {
+         if(i%2==0)
+        {
+            ciftDizi[sayacCift]=i;
+            printf("%d\n",ciftDizi[sayacCift]);
+            sayacCift++;
+        }
+    }
+
+    printf("\nTek sayilar;\n");
+    for(int i=0;i<=sayi;i++)
+    {
+         if(i%2==1)
+        {
+            tekDizi[sayacTek]=i;
+            printf("%d\n",tekDizi[sayacTek]);
+            sayacTek++;
+        }
+    }
 }
