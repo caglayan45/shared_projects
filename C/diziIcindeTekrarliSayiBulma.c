@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 void main()
 {
@@ -38,8 +37,36 @@ void main()
         }
     }
     printf("%d sayisi %d adet tekrarli",sayi,sonuc);
+}
 
+/*
+#include <stdio.h>
 
+void main()
+{
+    int k=0,m=0,l=0,c=0,sayi=0,sayac=1;
 
+    int dizi[15]={0,1,1,2,3,1,5,5,5,5,1,1,2,1,1};
+
+    for(int i=0;i<15;i++){
+        l=i+1;
+        k=dizi[i];
+        m=dizi[l];
+        if(k==m){
+            sayac=1;
+            while(k==m){
+                sayac++;
+                l++;
+                m=dizi[l];
+            }
+            i=l-1;
+            if(sayac>=c){
+                c=sayac;
+                sayi=dizi[i];
+            }
+        }
+    }
+    printf("%d sayisi %d adet bulundu.",sayi,c);
 
 }
+*/
